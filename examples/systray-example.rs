@@ -8,7 +8,7 @@ fn main() {
         Err(e) => panic!("Can't create window!")
     }
     let mut w = &mut app.window;
-    w.set_icon_from_file(&"C:\\Users\\qdot\\code\\git-projects\\systray-rs\\resources\\rust.ico".to_string());
+    w.set_icon_from_file(&"./resources/rust.ico".to_string());
     w.set_tooltip(&"Whatever".to_string());
     w.add_menu_item(&"Print a thing".to_string(), |window| {
         println!("Printing a thing!");
